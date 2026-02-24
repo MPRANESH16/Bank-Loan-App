@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Loan Application" icon-name="standard:record">
+        <div class="slds-p-around_medium">
+
+            <lightning-record-form
+                object-api-name="Loan_Application__c"
+                layout-type="Full"
+                mode="edit"
+                onsuccess={handleLoanCreated}>
+            </lightning-record-form>
+
+            <template if:true={recordId}>
+                <div class="slds-m-top_medium">
+                    <lightning-button
+                        label="Submit for Approval"
+                        variant="brand"
+                        onclick={submitForApproval}>
+                    </lightning-button>
+                </div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

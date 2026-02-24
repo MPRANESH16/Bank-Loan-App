@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="EMI Payment" icon-name="standard:payment">
+        <div class="slds-p-around_medium">
+            <lightning-record-form
+                object-api-name="EMI__c"
+                layout-type="Full"
+                mode="edit"
+                onsuccess={handleSuccess}>
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Bank Account Creation" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <lightning-record-form
+                object-api-name="Bank_Account__c"
+                layout-type="Full"
+                mode="edit"
+                onsuccess={handleSuccess}>
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

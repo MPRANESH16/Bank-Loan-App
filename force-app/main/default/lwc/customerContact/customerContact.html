@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Customer Contact Registration" icon-name="standard:contact">
+        <div class="slds-p-around_medium">
+            <lightning-record-form
+                object-api-name="Customer_Contact__c"
+                layout-type="Full"
+                mode="edit"
+                onsuccess={handleSuccess}>
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>
